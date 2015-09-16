@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Python Flask Bucket List App</title>
+
+    <style>
+            html { 
+              background: url(/static/img/ODB.jpg) no-repeat center center fixed; 
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+            }
+    </style>
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <h3 class="text-muted">
+            <center>{{ object }} BAD WORDS!!! </h3></center>
+    </div>
+ 
+        <div class="jumbotron">
+            <font size="6">
+            {{ data | safe }}
+            </font>
+
+        </div>
+ 
+        <div class="row marketing">
+            
+                <center>
+
+                <a href= '/'>BACK</a>
+                
+                </center>
+
+        </div>
+ 
+        <footer class="footer">
+            <p>&copy; Company 2015</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>

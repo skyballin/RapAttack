@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Python Flask Bucket List App</title>
+
+    <style>
+            html { 
+              background: url(/static/img/ODB.jpg) no-repeat center center fixed; 
+              -webkit-background-size: cover;
+              -moz-background-size: cover;
+              -o-background-size: cover;
+              background-size: cover;
+            }
+    </style>
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body>
+ 
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">Home</a>
+                    </li>
+                    <li role="presentation"><a href="#">Sign In</a>
+                    </li>
+                    <li role="presentation"><a href="showSignUp">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">Python Flask App</h3>
+        </div>
+ 
+        <div class="jumbotron">
+            <h1>RAPPER ATTACK!</h1>
+            <p class="lead"></p>
+            </p>
+        </div>
+ 
+        <div class="row marketing">
+            <div class="col-lg-4">
+                    <form action="/rap_lyrics" method='POST' >
+                    <input type="text" name="user_input" />
+                    <input type="submit"/>
+                    </form>
+            </div>
+            <div class='col-lg-8'>
+
+                Please submit a link to your favorite Genius.com Rap Lyrics and We'll Make it more Appropriate for You!!!!
+
+
+            </div>
+        </div>
+ 
+        <footer class="footer">
+            <p>&copy; Company 2015</p>
+        </footer>
+ 
+    </div>
+</body>
+ 
+</html>
